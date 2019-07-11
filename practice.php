@@ -32,3 +32,12 @@ $calender_2018=[
   ];
   echo $calender_2018["December"];
   echo "\n";
+  $height=160;
+  if($height<150){
+    echo"150cm未満の方はご乗車できません。";
+  }else{
+    echo"ご乗車になれます。";
+  }
+   echo "\n";
+   
+   
