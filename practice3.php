@@ -13,8 +13,14 @@ echo f(3,5);
 echo"\n";
 ?>
 <?php
-$arr=array(1,3,5,7,9);
-echo array_product($arr);
+function sumarray($arr){
+  $result=$arr[0];
+  for($i=1;$i<count($arr);$i++){
+    $result*=$arr[$i];
+  }
+  return $result;
+}
+echo sumarray(array(1,3,5,7,9));
 echo"\n";
 ?>
 <?php
